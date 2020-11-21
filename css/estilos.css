@@ -1,0 +1,122 @@
+:root {
+    /* ### Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /* ### Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: var(--dark-cyan);
+}
+
+main {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -145px left -210px, bottom -170px right -200px;
+    background-size: 100%;
+}
+
+@media screen and (min-width:500px) {
+    main {
+        background-position: top -237px left -345px, bottom -237px right -345px;
+    }
+}
+
+@media screen and (min-width:650px) {
+    main {
+        background-position: top -473px left -392px, bottom -473px right -392px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        background-position: top -956px left -604px, bottom -980px right -640px;
+    }
+}
+
+.wrapper {
+    padding: 0 1.2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.card-header {
+    height: 150px;
+    background-image: url(../images/bg-pattern-card.svg);
+    position: relative;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.card-body {
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+h1 span {
+    color: var(--dark-gray);
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+p {
+    color: var(--dark-gray);
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 0;
+    border-top: 2px solid #f1f1f1;
+    margin-bottom: 0;
+}
+
+li {
+    text-align: center;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+li span {
+    display: block;
+    font-size: .7rem;
+    color: var(--dark-gray);
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    margin: .5rem;
+}
