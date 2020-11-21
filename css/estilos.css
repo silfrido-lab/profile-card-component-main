@@ -22,26 +22,9 @@ main {
     height: 100vh;
     background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: top -145px left -210px, bottom -170px right -200px;
-    background-size: 100%;
-}
-
-@media screen and (min-width:500px) {
-    main {
-        background-position: top -237px left -345px, bottom -237px right -345px;
-    }
-}
-
-@media screen and (min-width:650px) {
-    main {
-        background-position: top -473px left -392px, bottom -473px right -392px;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    main {
-        background-position: top -956px left -604px, bottom -980px right -640px;
-    }
+    /* solucion rara, pero funciona 😁 */
+    background-position: right 45vw top -120vh, 48vw 50vh;
+    background-size: 180vh;
 }
 
 .wrapper {
